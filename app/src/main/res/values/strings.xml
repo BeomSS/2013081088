@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_titleList">위시리스트 - 목록</string>
+    <string name="app_titleAdd">위시리스트 - 추가</string>
+    <string name="app_titleEdit">위시리스트 - 수정</string>
+    <string name="app_titleHistory">위시리스트 - 히스토리</string>
+    <string name="title_showList">목록보기</string>
+    <string name="title_addList">추가하기</string>
+    <string name="title_showHistory">히스토리</string>
+    <string name="app_name">WishList</string>
+    <string name="rank">우선순위 : </string>
+    <string name="wishList">위시리스트</string>
+    <string name="wishHint">이번엔 무엇을 해 볼까?</string>
+    <string name="timeLimit">제한시간 : </string>
+    <string name="date">일</string>
+    <string name="save">저장</string>
+</resources>

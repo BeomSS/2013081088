@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:clickable="true">
+    <!-- 프래그먼트들 곂침 시 뒤에 것이 클릭 될 수 있어 clickable 속성 true로 줌(모든 프래그먼트 해당) -->
+    <!-- 스와이프 새로고침 위해 필요한 레이아웃 -->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 위시리스트 목록 보여줄 리싸이클러뷰 -->
+        <android.support.v7.widget.RecyclerView
+            android:scrollbars="vertical"
+            android:id="@+id/rclView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundColor"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.constraint.ConstraintLayout>

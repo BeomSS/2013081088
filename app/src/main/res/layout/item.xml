@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 리싸이클러뷰에 사용 할 아이템 레이아웃 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_normal"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:elevation="5dp"
+    android:id="@+id/rclLayout">
+    <!-- 우선순위, 성공/실패 문구 출력 할 텍스트뷰 -->
+    <TextView
+        android:id="@+id/viewPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 위시 출력 할 텍스트뷰 -->
+    <TextView
+        android:id="@+id/viewWish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 제한시간 출력 할 텍스트뷰 -->
+    <TextView
+        android:id="@+id/viewTimeLimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 등록/완료 날짜 출력 할 텍스트뷰 -->
+    <TextView
+        android:id="@+id/viewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 바텀네비게이션 뷰에 사용할 메뉴 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_showList"
+        android:icon="@drawable/ic_view_list_black_24dp"
+        android:title="@string/title_showList" />
+
+    <item
+        android:id="@+id/navigation_addList"
+        android:icon="@drawable/ic_add_circle_outline_black_24dp"
+        android:title="@string/title_addList" />
+
+    <item
+        android:id="@+id/navigation_showHistory"
+        android:icon="@drawable/ic_history_black_24dp"
+        android:title="@string/title_showHistory" />
+
+</menu>

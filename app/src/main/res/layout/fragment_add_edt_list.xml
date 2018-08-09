@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 추가 프래그먼트, 수정 액티비티에 사용 할 레이아웃 -->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:clickable="true">
+    <!-- 프래그먼트들 곂침 시 뒤에 것이 클릭 될 수 있어 clickable 속성 true로 줌(모든 프래그먼트 해당) -->
+    <TextView
+        android:id="@+id/tvRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rank"
+        android:layout_margin="@dimen/marginTen"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <!-- 우선순위 입력 할 스피너 -->
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinnerRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTen"
+        android:layout_margin="@dimen/marginTen"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tvRank" />
+    <TextView
+        android:id="@+id/tvWish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wishList"
+        android:layout_margin="@dimen/marginTen"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintTop_toBottomOf="@+id/tvRank"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <!-- 위시 입력 할 에디트텍스트 -->
+    <EditText
+        android:id="@+id/edtWish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/wishHint"
+        android:layout_margin="@dimen/marginTen"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorWhite"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWish"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <TextView
+        android:id="@+id/tvTimeLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timeLimit"
+        android:layout_margin="@dimen/marginTen"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtWish" />
+    <!-- 제한시간 입력 할 에디트텍스트 -->
+    <EditText
+        android:id="@+id/edtTimeLimit"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginTen"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        android:background="@color/colorWhite"
+        app:layout_constraintTop_toBottomOf="@+id/edtWish"
+        app:layout_constraintLeft_toRightOf="@+id/tvTimeLimit"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:layout_margin="@dimen/marginTen"
+        android:textSize="@dimen/textSize"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintLeft_toRightOf="@+id/edtTimeLimit"
+        app:layout_constraintTop_toBottomOf="@+id/edtWish"/>
+    <!-- 제한시간 입력 보조할 캘린더뷰 -->
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/marginTen"
+        app:layout_constraintTop_toBottomOf="@id/edtTimeLimit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <!-- 저장 이벤트 실행할 버튼 -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toTopOf="@+id/calendar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtWish"/>
+
+</android.support.constraint.ConstraintLayout>
